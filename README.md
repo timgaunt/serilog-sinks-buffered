@@ -1,2 +1,2 @@
 # serilog-sinks-buffered
-A buggered sink for SeriLog
+A buffered sink for SeriLog
