@@ -11,7 +11,7 @@
         <tags>serilog sink buffered</tags>
     </metadata>
     <dependencies>
-        <dependency id="Serilog" version="≥ 1.4.204 &amp;&amp; < 2.0" />
+        <dependency id="Serilog" version="≥ 1.4.204 &amp;&amp; &lt; 2.0" />
     </dependencies>
     <files>
         <file src="bin\$configuration$\SerilogSinksBuffered.dll" target="lib\net40\" />
