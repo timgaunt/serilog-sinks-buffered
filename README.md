@@ -29,4 +29,5 @@ var log = Log.Logger = new LoggerConfiguration()
         }
     ).CreateLogger();
 
-Log.Logger = log;```
+Log.Logger = log;
+```
