@@ -7,8 +7,8 @@
     <ProjectGuid>{5857DF27-677C-4939-A0FF-B24C1B946122}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SerilogSinksBuffered.Web</RootNamespace>
-    <AssemblyName>SerilogSinksBuffered.Web</AssemblyName>
+    <RootNamespace>Serilog.Sinks.Buffered.Web</RootNamespace>
+    <AssemblyName>Serilog.Sinks.Buffered.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -56,9 +56,9 @@
     <Compile Include="RequestId.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SerilogSinksBuffered\SerilogSinksBuffered.csproj">
+    <ProjectReference Include="..\SerilogSinksBuffered\Serilog.Sinks.Buffered.csproj">
       <Project>{FABD4420-A188-4234-8113-0951DBEF27B3}</Project>
-      <Name>SerilogSinksBuffered</Name>
+      <Name>Serilog.Sinks.Buffered</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

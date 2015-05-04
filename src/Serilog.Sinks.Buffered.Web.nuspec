@@ -9,12 +9,13 @@
         <description>Offers buffered logging to Serilog to only write to the log upon a specific log level. The web version automatically buffers based on the HTTP Request Id.</description>
         <copyright>Copyright &#x00A9; The Site Doctor. All rights reserved.</copyright>
         <tags>serilog sink buffered</tags>
+        <projectUrl>https://github.com/timgaunt/serilog-sinks-buffered</projectUrl>
         <dependencies>
             <dependency id="Serilog.Extras.Web" version="[1.4.204,2.0)" />
             <dependency id="Serilog.Sinks.Buffered" />
         </dependencies>
     </metadata>
     <files>
-        <file src="SerilogSinksBuffered.Web\bin\$configuration$\SerilogSinksBuffered.Web.dll" target="lib\net40\" />
+        <file src="SerilogSinksBuffered.Web\bin\$configuration$\Serilog.Sinks.Buffered.Web.dll" target="lib\net40\" />
     </files>
 </package>

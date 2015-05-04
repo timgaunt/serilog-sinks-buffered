@@ -7,8 +7,8 @@
     <ProjectGuid>{FABD4420-A188-4234-8113-0951DBEF27B3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SerilogSinksBuffered</RootNamespace>
-    <AssemblyName>SerilogSinksBuffered</AssemblyName>
+    <RootNamespace>Serilog.Sinks.Buffered</RootNamespace>
+    <AssemblyName>Serilog.Sinks.Buffered</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
