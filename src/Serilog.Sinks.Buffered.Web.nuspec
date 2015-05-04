@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+    <metadata>
+        <id>Serilog.Sinks.Buffered.Web</id>
+        <version>$version$</version>
+        <title>Serilog Sinks - Buffered</title>
+        <authors>The Site Doctor, Paul Blamire</authors>
+        <owners>The Site Doctor</owners>
+        <description>Offers buffered logging to Serilog to only write to the log upon a specific log level. The web version automatically buffers based on the HTTP Request Id.</description>
+        <copyright>Copyright &#x00A9; The Site Doctor. All rights reserved.</copyright>
+        <tags>serilog sink buffered</tags>
+        <projectUrl>https://github.com/timgaunt/serilog-sinks-buffered</projectUrl>
+        <dependencies>
+            <dependency id="SerilogWeb.Classic" version="[1.0.1,2.0)" />
+            <dependency id="Serilog.Sinks.Buffered" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="SerilogSinksBuffered.Web\bin\$configuration$\Serilog.Sinks.Buffered.Web.dll" target="lib\net40\" />
+    </files>
+</package>
