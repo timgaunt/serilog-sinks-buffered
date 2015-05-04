@@ -1,7 +1,7 @@
 using System.Web;
-using SerilogSinksBuffered.NestedScopes;
+using Serilog.Sinks.Buffered.NestedScopes;
 
-namespace SerilogSinksBuffered
+namespace Serilog.Sinks.Buffered.Web
 {
     public class HttpNestedLoggingProvider : INestedLoggingProvider
     {

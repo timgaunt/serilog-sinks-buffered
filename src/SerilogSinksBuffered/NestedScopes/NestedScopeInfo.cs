@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace SerilogSinksBuffered.NestedScopes
+namespace Serilog.Sinks.Buffered.NestedScopes
 {
     public class NestedScopeInfo
     {

@@ -1,9 +1,8 @@
 using System;
-using Serilog;
 using Serilog.Core;
 using Serilog.Events;
 
-namespace SerilogSinksBuffered
+namespace Serilog.Sinks.Buffered
 {
     public static class BufferedSinkConfigExtensions
     {

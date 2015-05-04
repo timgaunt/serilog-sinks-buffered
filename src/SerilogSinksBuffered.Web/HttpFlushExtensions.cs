@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SerilogSinksBuffered.Web
+namespace Serilog.Sinks.Buffered.Web
 {
     public static class HttpFlushExtensions
     {

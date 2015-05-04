@@ -1,4 +1,4 @@
-﻿namespace SerilogSinksBuffered
+﻿namespace Serilog.Sinks.Buffered
 {
     public interface IPerRequestLogger
     {

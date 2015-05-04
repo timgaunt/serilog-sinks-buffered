@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web;
 
-namespace SerilogSinksBuffered.Web
+namespace Serilog.Sinks.Buffered.Web
 {
     public class PerRequestLoggingModule : IHttpModule
     {

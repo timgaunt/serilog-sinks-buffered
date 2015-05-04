@@ -1,4 +1,4 @@
-﻿namespace SerilogSinksBuffered.NestedScopes
+﻿namespace Serilog.Sinks.Buffered.NestedScopes
 {
     public interface INestedLogging
     {

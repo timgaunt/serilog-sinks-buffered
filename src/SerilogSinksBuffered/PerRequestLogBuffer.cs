@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using Serilog.Core;
 using Serilog.Events;
-using SerilogSinksBuffered.NestedScopes;
+using Serilog.Sinks.Buffered.NestedScopes;
 
-namespace SerilogSinksBuffered
+namespace Serilog.Sinks.Buffered
 {
     public class PerRequestLogBuffer
     {

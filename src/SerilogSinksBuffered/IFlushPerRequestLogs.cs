@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SerilogSinksBuffered
+namespace Serilog.Sinks.Buffered
 {
     public interface IFlushPerRequestLogs
     {

@@ -11,7 +11,7 @@
         <tags>serilog sink buffered</tags>
         <projectUrl>https://github.com/timgaunt/serilog-sinks-buffered</projectUrl>
         <dependencies>
-            <dependency id="Serilog.Extras.Web" version="[1.4.204,2.0)" />
+            <dependency id="SerilogWeb.Classic" version="[1.0.1,2.0)" />
             <dependency id="Serilog.Sinks.Buffered" />
         </dependencies>
     </metadata>

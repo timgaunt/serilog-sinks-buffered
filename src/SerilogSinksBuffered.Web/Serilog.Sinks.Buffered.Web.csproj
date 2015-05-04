@@ -33,11 +33,11 @@
     <Reference Include="Serilog">
       <HintPath>..\packages\Serilog.1.4.204\lib\net45\Serilog.dll</HintPath>
     </Reference>
-    <Reference Include="Serilog.Extras.Web">
-      <HintPath>..\packages\Serilog.Extras.Web.1.4.204\lib\net45\Serilog.Extras.Web.dll</HintPath>
-    </Reference>
     <Reference Include="Serilog.FullNetFx">
       <HintPath>..\packages\Serilog.1.4.204\lib\net45\Serilog.FullNetFx.dll</HintPath>
+    </Reference>
+    <Reference Include="SerilogWeb.Classic">
+      <HintPath>..\packages\SerilogWeb.Classic.1.0.1\lib\net45\SerilogWeb.Classic.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

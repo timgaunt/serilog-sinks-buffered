@@ -1,7 +1,7 @@
 ﻿using System;
 using Serilog.Context;
 
-namespace SerilogSinksBuffered.NestedScopes
+namespace Serilog.Sinks.Buffered.NestedScopes
 {
     public class NestedLoggingScope : IDisposable
     {

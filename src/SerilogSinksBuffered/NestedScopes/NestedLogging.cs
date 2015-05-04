@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SerilogSinksBuffered.NestedScopes
+namespace Serilog.Sinks.Buffered.NestedScopes
 {
     public class NestedLogging : INestedLogging
     {

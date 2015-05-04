@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Web;
-using Serilog.Extras.Web.Enrichers;
+using SerilogWeb.Classic.Enrichers;
 
-namespace SerilogSinksBuffered.Web
+namespace Serilog.Sinks.Buffered.Web
 {
     public static class RequestId
     {

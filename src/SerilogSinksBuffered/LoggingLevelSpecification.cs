@@ -1,6 +1,6 @@
 ﻿using Serilog.Events;
 
-namespace SerilogSinksBuffered
+namespace Serilog.Sinks.Buffered
 {
     public class LoggingLevelSpecification
     {
