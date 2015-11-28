@@ -3,7 +3,7 @@
     <metadata>
         <id>Serilog.Sinks.Buffered.Web</id>
         <version>$version$</version>
-        <title>Serilog Sinks - Buffered.Web</title>
+        <title>Serilog.Sinks.Buffered.Web</title>
         <authors>The Site Doctor, Paul Blamire</authors>
         <owners>The Site Doctor</owners>
         <description>Offers buffered logging to Serilog to only write to the log upon a specific log level. The web version automatically buffers based on the HTTP Request Id.</description>
@@ -11,7 +11,7 @@
         <tags>serilog sink buffered</tags>
         <projectUrl>https://github.com/timgaunt/serilog-sinks-buffered</projectUrl>
         <dependencies>
-            <dependency id="SerilogWeb.Classic" version="[1.0.1,2.0)" />
+            <dependency id="SerilogWeb.Classic" />
             <dependency id="Serilog.Sinks.Buffered" />
         </dependencies>
     </metadata>
