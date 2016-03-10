@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SerilogSinksBuffered")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Serilog.Sinks.Buffered")]
+[assembly: AssemblyDescription("Offers buffered logging to Serilog to only write to the log upon a specific log level.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SerilogSinksBuffered")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCompany("The Site Doctor")]
+[assembly: AssemblyProduct("Serilog.Sinks.Buffered")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
