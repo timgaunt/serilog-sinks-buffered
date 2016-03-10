@@ -10,14 +10,20 @@ namespace Serilog.Sinks.Buffered.Web
 
         public static string GetCurrentId()
         {
-            Guid requestId;
-            var requestIdItem = HttpContext.Current.Items[RequestIdItemName];
-            if (requestIdItem == null)
+            if (HttpContext.Current == null)
             {
-                requestIdItem = Guid.NewGuid();
-                HttpContext.Current.Items[RequestIdItemName] = requestIdItem;
+                return "NO-CONTEXT";
             }
-            return ((Guid)requestIdItem).ToString();
+
+            var requestIdItem = HttpContext.Current.Items[RequestIdItemName];
+            if (requestIdItem != null)
+            {
+                return requestIdItem.ToString();
+            }
+
+            requestIdItem = Guid.NewGuid();
+            HttpContext.Current.Items[RequestIdItemName] = requestIdItem;
+            return requestIdItem.ToString();
         }
     }
 }
