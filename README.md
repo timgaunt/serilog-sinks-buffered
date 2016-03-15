@@ -31,3 +31,36 @@ var log = Log.Logger = new LoggerConfiguration()
 
 Log.Logger = log;
 ```
+
+
+## Registering the PerRequestLoggingModule (to support web request buffering)
+
+### Autofac
+```c#
+private static void RegisterSerilog(IKernel kernel)
+{
+    var bufferedSink = SerilogBootstrapper.RegisterSerilog();
+
+    PerRequestLoggingModule.ResolvePerRequestLogger = () => bufferedSink;
+
+    kernel.Bind<IPerRequestLogger>().ToMethod(c => bufferedSink);
+    kernel.Bind<IFlushPerRequestLogs>().ToMethod(c => bufferedSink);
+
+    DynamicModuleUtility.RegisterModule(typeof(PerRequestLoggingModule));
+}
+```
+
+### Ninject
+```c#
+private static void RegisterSerilog(IKernel kernel)
+{
+    var bufferedSink = SerilogBootstrapper.RegisterSerilog();
+
+    PerRequestLoggingModule.ResolvePerRequestLogger = () => bufferedSink;
+
+    kernel.Bind<IPerRequestLogger>().ToMethod(c => bufferedSink);
+    kernel.Bind<IFlushPerRequestLogs>().ToMethod(c => bufferedSink);
+
+    DynamicModuleUtility.RegisterModule(typeof(PerRequestLoggingModule));
+}
+```

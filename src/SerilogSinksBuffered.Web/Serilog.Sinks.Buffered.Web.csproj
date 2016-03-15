@@ -31,15 +31,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Serilog, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
-      <HintPath>..\packages\Serilog.1.5.7\lib\net45\Serilog.dll</HintPath>
+      <HintPath>..\packages\Serilog.1.5.14\lib\net45\Serilog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serilog.Extras.Web, Version=1.4.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.Extras.Web.1.4.196\lib\net45\Serilog.Extras.Web.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Serilog.FullNetFx, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
-      <HintPath>..\packages\Serilog.1.5.7\lib\net45\Serilog.FullNetFx.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SerilogWeb.Classic, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9462ddd55fbc0e7f, processorArchitecture=MSIL">
-      <HintPath>..\packages\SerilogWeb.Classic.2.0.6\lib\net45\SerilogWeb.Classic.dll</HintPath>
+      <HintPath>..\packages\Serilog.1.5.14\lib\net45\Serilog.FullNetFx.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -65,6 +65,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

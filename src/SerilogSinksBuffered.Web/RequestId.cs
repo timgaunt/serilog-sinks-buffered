@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Web;
-using SerilogWeb.Classic.Enrichers;
+using Serilog.Extras.Web.Enrichers;
 
 namespace Serilog.Sinks.Buffered.Web
 {
