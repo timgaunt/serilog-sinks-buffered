@@ -35,16 +35,18 @@ Log.Logger = log;
 
 ## Registering the PerRequestLoggingModule (to support web request buffering)
 
+You'll need to reference the namespaces `Microsoft.Web.Infrastructure.DynamicModuleHelper` and `Serilog.Sinks.Buffered.Web`
+
 ### Autofac
 ```c#
 private static void RegisterSerilog(IKernel kernel)
 {
-    var bufferedSink = SerilogBootstrapper.RegisterSerilog();
+    IPerRequestLogger bufferedSink = SeriLogBootstrapper.RegisterSerilog();
 
     PerRequestLoggingModule.ResolvePerRequestLogger = () => bufferedSink;
 
-    kernel.Bind<IPerRequestLogger>().ToMethod(c => bufferedSink);
-    kernel.Bind<IFlushPerRequestLogs>().ToMethod(c => bufferedSink);
+    _builder.RegisterInstance(bufferedSink).As<IPerRequestLogger>();
+    _builder.RegisterInstance(bufferedSink).As<IFlushPerRequestLogs>();
 
     DynamicModuleUtility.RegisterModule(typeof(PerRequestLoggingModule));
 }
