@@ -4,7 +4,7 @@ if "%config%" == "" (
    set config=Release
 )
 
-set version=1.1.0
+set version=1.1.1
 if not "%PackageVersion%" == "" (
    set version=%PackageVersion%
 )
@@ -22,3 +22,6 @@ mkdir Build\lib\net40
 
 %nuget% pack "src\Serilog.Sinks.Buffered.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
 %nuget% pack "src\Serilog.Sinks.Buffered.Web.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
+
+rd Build\lib\net40
+rd Build\lib
