@@ -103,9 +103,7 @@ namespace aspnetcore.Serilog
         {
             if (bufferedSink == null)
             {
-                var loggerFac = (ILoggerFactory)app.ApplicationServices.GetService(typeof(ILoggerFactory));
-                loggerFac.CreateLogger(typeof(BufferedLogMiddlewareExtensions))
-                    .LogWarning("UseBufferedLog given a null bufferedSink and will not be active");
+                Console.WriteLine("UseBufferedLog given a null bufferedSink and will not be active");
             }
             else
             {
