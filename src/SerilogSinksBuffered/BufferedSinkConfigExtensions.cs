@@ -14,11 +14,14 @@ namespace Serilog.Sinks.Buffered
             out BufferedSink bufferedSink,
             Action<LoggerConfiguration> configureLogger,            
             LogEventLevel restrictedToMinimumLevel = LevelAlias.Minimum)
-        {            
-            var lc = new LoggerConfiguration();
-            lc.MinimumLevel.Verbose();
+        {
+            var lc = new LoggerConfiguration()
+                .MinimumLevel.Verbose();
+
             configureLogger(lc);
-            var innerLoggerAsSink = (ILogEventSink)lc.CreateLogger();
+
+            var log = lc.CreateLogger();
+            var innerLoggerAsSink = (ILogEventSink) log;
             var buffer = new BufferedSink(eventLevel, allEventLevel, requestIdProperty, maxRequestAgeInSeconds, innerLoggerAsSink);
             bufferedSink = buffer;
             return config.WriteTo.Sink(buffer);
